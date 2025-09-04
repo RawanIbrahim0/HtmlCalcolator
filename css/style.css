@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    direction: ltr;
+}
+
+.calcolator {
+    width: 360px;
+    background: black;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+    padding: 18px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 14px;
+}
+
+.screen {
+    background: transparent;
+    padding: 14px 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+}
+
+.screen .result {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button.number {
+    background: rgb(69, 69, 69);
+    color: rgb(255, 255, 255);
+    border: 0;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 17px;
+    user-select: none;
+    box-shadow: 0 4px 8px rgba(56, 56, 56, 0.8);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button.O {
+    background: rgb(69, 69, 69);
+    color: rgb(249, 111, 13);
+}
+
+button.M {
+    color: rgb(197, 194, 194);
+}
+
+button.OO {
+    background: rgb(249, 111, 13);
+    color: rgb(255, 255, 255);
+}
+
+/* button.C {
+    background: #e83535;
+    color: white;
+} */
